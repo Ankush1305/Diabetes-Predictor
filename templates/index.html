@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+    body {background-image: url('https://images.agoramedia.com/everydayhealth/gcms/How-Your-Genes-Can-Play-a-Role-in-Whether-You-Develop-Diabetes-722x406.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+   p.heading{ font-family: "Sofia";
+  font-size: 22px;}
+  p.impact {
+  font-family: Impact, Charcoal, sans-serif;
+  #myDIV {
+  width: 300px;
+  height: 200px;
+  background: red;
+  animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+    p    {color: red;}
+}
+
+heading {
+  font-family: "Sofia";
+  font-size: 22px;
+}
+
+.sofia {
+  font-family: 'Sofia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sofia'), local('Sofia-Regular'), url(https://fonts.gstatic.com/s/sofia/v8/8QIHdirahM3j_su5uI0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+    </style>
+</head>
+<body>
+
+<div  class="heading">
+    <h2 class="sofia" style="background-color:MediumSeaGreen;text-align:center;font-size:30px;margin-top:0px;font-family:sofia;"> Diabetes Predictor</h2>
+    <h3 style="text-align:center;background-color: lightGray;margin-top:-10px;font-family:sofia;">A machine learning model, built on flask, deployed on Heroku!!!</h3>
+
+</div>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class="impact">
+     <form action="/predict" method ="POST">
+    <div class="col-lg-12">
+       <div class="row">
+        <div class="col-lg-4">
+
+        <label for="pregnancies">Pregnancies:</label><br><br>
+        <input type="text" id="pregnancies" name="pregnancies"><br><br>
+
+        <label for="glucose">Glucose:</label><br><br>
+        <input type="text" id="glucose" name="glucose"><br><br>
+
+        <label for="bp">Blood Pressure:</label><br><br>
+        <input type="text" id="bp" name="bp"><br><br>
+
+        <label for="skint">Skin Thickness:</label><br><br>
+        <input type="text" id="skint" name="skint"><br><br>
+   </div>
+           <div class="col-lg-4">
+        <label for="insulin">Insulin:</label><br><br>
+        <input type="text" id="insulin" name="insulin"><br><br>
+        <label for="bmi">BMI:</label><br><br>
+        <input type="text" id="bmi" name="bmi"><br><br>
+        <label for="dpf">DiabetesPedigreeFunction:</label><br><br>
+        <input type="text" id="dpf" name="dpf"><br><br>
+        <label for="age">Age:</label><br><br>
+        <input type="text"  id="age" name="age"><br><br>
+        <input type="submit" class="btn btn-warning" value="Predict">
+           </div></div></div></form></div>
+
+<br><br>
+<br><br>
+
+<!-- Footer -->
+       <div class='footer'>
+
+           <p class='footer-description' style="text-align:center;bottom-margin:50px;">Made with ❤️ by Ankush Dev.</p>
+       </div>
+
+
+
+
+
+</body>
+</html>
